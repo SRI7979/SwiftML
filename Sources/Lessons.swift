@@ -511,6 +511,8 @@ struct LessonProvider {
                 A messy screen with repeated code blocks vs one clean block labeled “function()”.
                 """,
                 
+                "IMG:1T4",
+                
                 "--------------------------------------------------",
 
        
@@ -538,6 +540,8 @@ struct LessonProvider {
                 Image to place here:
                 A box labeled “greet()” with an arrow pointing to “Hello!” output.
                 """,
+                
+                "IMG:2T4",
                 
                 "--------------------------------------------------",
 
@@ -567,6 +571,8 @@ struct LessonProvider {
                 Input: "Jordan" → greet() → Output: "Hello Jordan"
                 """,
                 
+                "IMG:3T4",
+                
                 "--------------------------------------------------",
 
        
@@ -593,6 +599,8 @@ struct LessonProvider {
                 Input: 5 → double() → Output: 10
                 Styled like a small machine.
                 """,
+                
+                "IMG:4T4",
                 
                 "--------------------------------------------------",
 
@@ -621,7 +629,9 @@ struct LessonProvider {
                 Input → Function → Output
                 Below it, a subtle second line:
                 Input → Model → Prediction
-                """
+                """,
+                
+                "IMG:5T4"
             ]
         ),
         
@@ -646,6 +656,8 @@ struct LessonProvider {
                 Image to place here:
                 A raw list of numbers on the left → arrow → summarized result on the right (like “Average: 88”).
                 """,
+                
+                "IMG:1T5",
                 
                 "--------------------------------------------------",
 
@@ -679,6 +691,8 @@ struct LessonProvider {
                 With arrows pointing to labels like “Total”, “Average”, “Count”.
                 """,
                 
+                "IMG:2T5",
+                
                 "--------------------------------------------------",
 
        
@@ -708,6 +722,8 @@ struct LessonProvider {
                 +92 → 345
                 """,
                 
+                "IMG:3T5",
+
                 "--------------------------------------------------",
 
        
@@ -734,6 +750,8 @@ struct LessonProvider {
                 With the label “Average Score”.
                 """,
                 
+                "IMG:4T5",
+
                 "--------------------------------------------------",
        
                 """
@@ -761,6 +779,8 @@ struct LessonProvider {
                 Label: “Count = 1”
                 """,
                 
+                "IMG:5T5",
+
                 "--------------------------------------------------",
 
                 """
@@ -783,7 +803,9 @@ struct LessonProvider {
                 Image to place here:
                 Flow diagram:
                 Data → Processing → Pattern → Decision
-                """
+                """,
+                
+                "IMG:6T5"
             ]
         ),
     ]
