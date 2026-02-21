@@ -342,6 +342,8 @@ struct LessonProvider {
                 A visual showing a human checking boxes one by one vs a computer auto-checking many instantly.
                 """,
                 
+                "IMG:1T3",
+                
                 "--------------------------------------------------",
 
                 """
@@ -366,6 +368,9 @@ struct LessonProvider {
                 1 → 2 → 3 → 4
                 With an arrow looping over each one.
                 """,
+                
+                "IMG:2T3",
+                
                 
                 "--------------------------------------------------",
 
@@ -392,6 +397,9 @@ struct LessonProvider {
                 → Item 3 → Action
                 """,
                 
+                
+                "IMG:3T3",
+                
                 "--------------------------------------------------",
 
                 
@@ -414,6 +422,10 @@ struct LessonProvider {
                 Large list (many items)
                 Both processed by the same loop arrow.
                 """,
+                
+                
+                "IMG:4T3",
+                
                 
                 "--------------------------------------------------",
 
@@ -445,6 +457,10 @@ struct LessonProvider {
                 A list of step counts with a checkmark next to 12000 and blank next to the others.
                 """,
                 
+                
+                "IMG:5T3",
+                
+                
                 "--------------------------------------------------",
 
        
@@ -468,7 +484,10 @@ struct LessonProvider {
                 Data → Process → Adjust → Repeat
                 
                 (Subtle preview of ML training loop)
-                """
+                """,
+                
+                
+                "IMG:6T3"
             ]
         ),
         
