@@ -28,7 +28,7 @@ struct TaskDetailView: View {
                             )
                         )
                         .shadow(color: .blue.opacity(1), radius: 10, x: 0, y: 0)
-                        .position(x: 200, y: -30)
+                        .position(x: 200, y: -10)
                     
                     ForEach(lesson.content, id: \.self) {
                         item in

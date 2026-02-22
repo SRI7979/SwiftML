@@ -96,7 +96,7 @@ struct LessonProvider {
                 "IMG:string_image1",
                 
                 "--------------------------------------------------",
-               
+                
                 """
                 Booleans
                 Booleans are quite simple. They can only be represented by two values, 
@@ -120,27 +120,27 @@ struct LessonProvider {
                 """
                 3️⃣ Executing our first line of code!!!
                 One of the most basic functions in Python and most languages is the print statement
-
+                
                 The print() command tells Python to display something on the screen.
-
+                
                 If you write:
-
+                
                 print(5)
-
-
+                
+                
                 The output will be:
-
+                
                 5
-
+                
                 If you write:
-
+                
                 print("Hi")
-
-
+                
+                
                 The output will be:
-
+                
                 Hi
-
+                
                 print() is how we see results.
                 It’s like asking the computer to speak.
                 """,
@@ -345,7 +345,7 @@ struct LessonProvider {
                 "IMG:1T3",
                 
                 "--------------------------------------------------",
-
+                
                 """
                 What a Loop Is
                 A loop tells the computer:
@@ -373,7 +373,7 @@ struct LessonProvider {
                 
                 
                 "--------------------------------------------------",
-
+                
                 """
                 How Loops Move Through Lists
                 
@@ -401,7 +401,7 @@ struct LessonProvider {
                 "IMG:3T3",
                 
                 "--------------------------------------------------",
-
+                
                 
                 """
                 Why This Is Powerful
@@ -428,8 +428,8 @@ struct LessonProvider {
                 
                 
                 "--------------------------------------------------",
-
-       
+                
+                
                 """
                 Real-World Example
                 
@@ -462,8 +462,8 @@ struct LessonProvider {
                 
                 
                 "--------------------------------------------------",
-
-       
+                
+                
                 """
                 Why This Matters
                 
@@ -496,17 +496,17 @@ struct LessonProvider {
             content: [
                 """
                 Why We Need Functions
-
+                
                 Imagine copying the same block of code ten times.
-
+                
                 If you need to change it, you now have to edit it in ten places.
-
+                
                 That’s inefficient.
-
+                
                 Functions solve this problem.
-
+                
                 They let us package instructions into a reusable system.
-
+                
                 Image to place here:
                 A messy screen with repeated code blocks vs one clean block labeled “function()”.
                 """,
@@ -514,29 +514,29 @@ struct LessonProvider {
                 "IMG:1T4",
                 
                 "--------------------------------------------------",
-
-       
+                
+                
                 """
                 What a Function Is
-
+                
                 A function is a named block of code that performs a specific task.
-
+                
                 You define it once.
-
+                
                 Then you can use it whenever you need it.
-
+                
                 Example:
-
+                
                 def greet():
                     print("Hello!")
-
-
+                
+                
                 This creates a function called greet.
-
+                
                 When the program runs greet(), it prints “Hello!”.
-
+                
                 The function acts like a tool you can use again and again.
-
+                
                 Image to place here:
                 A box labeled “greet()” with an arrow pointing to “Hello!” output.
                 """,
@@ -544,29 +544,29 @@ struct LessonProvider {
                 "IMG:2T4",
                 
                 "--------------------------------------------------",
-
-       
+                
+                
                 """
                 Functions With Input
-
+                
                 Functions become more powerful when they accept input.
-
+                
                 Example:
-
+                
                 def greet(name):
                     print("Hello " + name)
-
-
+                
+                
                 Now the function doesn’t just say “Hello”.
-
+                
                 It says hello to whoever you give it.
-
+                
                 If you pass in "Jordan", the output becomes:
-
+                
                 Hello Jordan
-
+                
                 The input changes the result.
-
+                
                 Image to place here:
                 Input: "Jordan" → greet() → Output: "Hello Jordan"
                 """,
@@ -574,27 +574,27 @@ struct LessonProvider {
                 "IMG:3T4",
                 
                 "--------------------------------------------------",
-
-       
+                
+                
                 """
                 Functions That Return Values
-
+                
                 Some functions don’t just print things.
-
+                
                 They calculate and return results.
-
+                
                 Example:
-
+                
                 def double(number):
                     return number * 2
-
-
+                
+                
                 If you give it 5, it returns 10.
-
+                
                 The function takes input, processes it, and produces output.
-
+                
                 That’s a system.
-
+                
                 Image to place here:
                 Input: 5 → double() → Output: 10
                 Styled like a small machine.
@@ -603,27 +603,27 @@ struct LessonProvider {
                 "IMG:4T4",
                 
                 "--------------------------------------------------",
-
-       
+                
+                
                 """
                 Why This Matters
-
+                
                 A function is basically an input → output machine.
-
+                
                 You give it something.
                 It processes it.
                 It gives you something back.
-
+                
                 This idea is extremely important.
-
+                
                 Because later, when we talk about machine learning models, they work the same way.
-
+                
                 Input data → Model → Prediction
-
+                
                 A model is just a very advanced function.
-
+                
                 Understanding functions means understanding the structure behind intelligent systems.
-
+                
                 Image to place here:
                 A clean diagram:
                 Input → Function → Output
@@ -640,19 +640,19 @@ struct LessonProvider {
             content: [
                 """
                 Why Data Processing Matters
-
+                
                 Storing data is useful.
-
+                
                 But the real power comes from doing something with it.
-
+                
                 Programs don’t just hold information — they analyze it.
-
+                
                 They calculate totals.
                 They find averages.
                 They count patterns.
-
+                
                 That’s data processing.
-
+                
                 Image to place here:
                 A raw list of numbers on the left → arrow → summarized result on the right (like “Average: 88”).
                 """,
@@ -660,32 +660,32 @@ struct LessonProvider {
                 "IMG:1T5",
                 
                 "--------------------------------------------------",
-
-       
+                
+                
                 """
                 Working With a List of Data
-
+                
                 Imagine we have a list of test scores:
-
+                
                 scores = [85, 90, 78, 92]
-
-
+                
+                
                 This is raw data.
-
+                
                 By itself, it’s just numbers.
-
+                
                 But we can process it to learn something useful.
-
+                
                 For example:
-
+                
                 What’s the total score?
-
+                
                 What’s the average?
-
+                
                 How many scores are above 90?
-
+                
                 Data becomes meaningful when we analyze it.
-
+                
                 Image to place here:
                 Boxes labeled 85 | 90 | 78 | 92
                 With arrows pointing to labels like “Total”, “Average”, “Count”.
@@ -694,25 +694,25 @@ struct LessonProvider {
                 "IMG:2T5",
                 
                 "--------------------------------------------------",
-
-       
+                
+                
                 """
                 Finding a Total
-
+                
                 To find a total, we add all the numbers together.
-
+                
                 A program would:
-
+                
                 Start at 0
-
+                
                 Add each number in the list
-
+                
                 Keep updating the total
-
+                
                 At the end, we get the sum.
-
+                
                 This is how calculators work behind the scenes.
-
+                
                 Image to place here:
                 A running total visual:
                 Start: 0
@@ -723,81 +723,81 @@ struct LessonProvider {
                 """,
                 
                 "IMG:3T5",
-
+                
                 "--------------------------------------------------",
-
-       
+                
+                
                 """
                 Finding an Average
-
+                
                 An average tells us the “typical” value.
-
+                
                 To calculate it:
-
+                
                 1: Add all the numbers
                 2: Divide by how many numbers there are
-
+                
                 If the total is 345 and there are 4 scores:
-
+                
                 345 ÷ 4 = 86.25
-
+                
                 Now we understand the overall performance.
-
+                
                 Summaries turn raw data into insight.
-
+                
                 Image to place here:
                 Total 345 ÷ 4 = 86.25
                 With the label “Average Score”.
                 """,
                 
                 "IMG:4T5",
-
+                
                 "--------------------------------------------------",
-       
+                
                 """
                 Counting Patterns
-
+                
                 Sometimes we want to count how many values meet a condition.
-
+                
                 For example:
                 How many scores are above 90?
-
+                
                 The program checks each number and keeps count.
-
+                
                 This combines:
-
+                
                 Lists
-
+                
                 Conditionals
-
+                
                 Loops
-
+                
                 Everything you’ve learned so far.
-
+                
                 Image to place here:
                 Scores list with 92 highlighted
                 Label: “Count = 1”
                 """,
                 
                 "IMG:5T5",
-
+                
                 "--------------------------------------------------",
-
+                
                 """
                 Why This Matters
-
+                
                 Machine learning systems don’t just store data.
-
+                
                 They process it.
-
+                
                 They calculate errors.
                 They compute averages.
                 They analyze patterns repeatedly.
-
+                
                 What you just learned is the foundation of that process.
-
+                
                 Data → Process → Insight
-
+                
                 That’s the core of modern computing.
 
                 Image to place here:
@@ -808,5 +808,497 @@ struct LessonProvider {
                 "IMG:6T5"
             ]
         ),
+        
+        6: Lesson(
+            title: "Averages & Why We Summarize Data",
+            content: [
+                """
+                Why We Need Averages
+                Imagine looking at 100 test scores.
+                Just a long list of numbers.
+                That’s overwhelming.
+                Instead of staring at every number, we summarize.
+                An average gives us one number that represents the overall trend.
+                Image to place here:
+                 A messy vertical list of many numbers on the left → arrow → one clean box labeled “Average: 86”
+                """,
+                
+                
+                """
+                What an Average Is
+                An average (also called the mean) is a way to describe what’s typical.
+                To calculate it:
+                 Add all the values together.
+                 Divide by how many values there are.
+                That’s it.
+                It compresses many numbers into one meaningful summary.
+                Image to place here:
+                 A simple visual:
+                 85 + 90 + 78 + 92 = 345
+                 345 ÷ 4 = 86.25
+                 Label: “Average”
+                """,
+                
+                """
+                Why Dividing Matters
+                If you only add numbers, bigger groups always look larger.
+                Dividing adjusts for size.
+                Four students with scores totaling 345 is different from 40 students totaling 345.
+                Dividing keeps things fair.
+                It answers:
+                 “What’s the typical value per item?”
+                Image to place here:
+                 Two groups:
+                 Group A: 4 numbers → Average 86
+                 Group B: 40 numbers → Same total but much lower average
+                 Clean comparison layout.
+                """,
+                
+                """
+                What Averages Actually Tell Us
+                An average doesn’t tell you everything.
+                It doesn’t show:
+                 The highest score.
+                 The lowest score.
+                 How spread out the data is.
+                But it gives a quick sense of direction.
+                Above 90 average? Strong performance.
+                 Around 60 average? Needs improvement.
+                It’s a summary, not the full story.
+                Image to place here:
+                 A small graph with dots scattered between 70–100
+                 A horizontal line labeled “Average = 86”
+                """,
+                
+                """
+                Real-World Example
+                Imagine a fitness tracker app.
+                Here are daily steps for a week:
+                [4000, 8000, 12000, 3000, 9000, 10000, 7000]
+                Looking at that list is hard.
+                But if we calculate the average:
+                Total steps ÷ 7 = average daily steps
+                Now we know the typical activity level.
+                Even if one day was very high (12000), the average balances it out.
+                That’s why apps summarize your data instead of showing endless lists.
+                Image to place here:
+                 Bracketed list labeled “Weekly Steps”
+                 Arrow pointing to a box labeled “Average Steps Per Day”
+                """,
+                
+                """
+                Why This Matters for Machine Learning
+                Machine learning models constantly summarize data.
+                They calculate:
+                 Average error.
+                 Average loss.
+                 Average prediction.
+                They use averages to measure performance.
+                If you understand why we summarize data,
+                 you understand how models measure progress.
+                Data → Summary → Insight
+                That’s the beginning of intelligent systems.
+                Image to place here:
+                 Flow diagram:
+                 Data → Calculate Average → Performance Insight
+                """
+            ]
+        ),
+        
+        7: Lesson(
+            title: "Graphs & Relationships",
+            content: [
+                """
+                Why We Use Graphs
+                Looking at raw numbers makes patterns hard to see.
+                But when we plot data on a graph, patterns become visible.
+                Graphs turn numbers into pictures.
+                And pictures reveal trends faster than lists ever could.
+                Image to place here:
+                 A vertical list of numbers on the left → arrow → simple line graph on the right.
+                """,
+                
+                """
+                Understanding the Axes
+                A graph has two directions.
+                The horizontal axis (x-axis) usually represents input.
+                 The vertical axis (y-axis) represents output.
+                For example:
+                 Hours studied → Test score
+                Input affects output.
+                Image to place here:
+                 A clean x–y grid labeled:
+                 Bottom: “Hours Studied (x)”
+                 Side: “Test Score (y)”
+                """,
+                
+                """
+                Plotting Points
+                Each data pair becomes a point.
+                If someone studies 2 hours and scores 70,
+                 that becomes one dot on the graph.
+                If they study 5 hours and score 85,
+                 that becomes another dot.
+                One point = one relationship.
+                Image to place here:
+                 Grid with dots at (2,70), (5,85), etc.
+                 Minimalistic style.
+                """,
+                
+                """
+                Seeing Trends
+                When many points move in a direction, that’s a trend.
+                If more study hours usually lead to higher scores,
+                 the dots will rise as you move right.
+                That’s called a positive relationship.
+                If dots fall as you move right,
+                 that’s a negative relationship.
+                Graphs show relationships visually.
+                Image to place here:
+                 Two side-by-side mini graphs:
+                 Left: upward trend (positive)
+                 Right: downward trend (negative)
+                """,
+                
+                """
+                Why Relationships Matter
+                Machine learning is about finding relationships.
+                Input → Output.
+                Graphs help us see those connections before a computer does.
+                If the relationship looks clear to us,
+                 a model can likely learn it too.
+                Graphs are the bridge between raw data and prediction.
+                Image to place here:
+                 Flow diagram:
+                 Input Data → Graph → Pattern → Prediction
+                """,
+                
+                """
+                Real-World Example
+                Imagine tracking temperature throughout the day.
+                At 8am → 60°F
+                 At 12pm → 75°F
+                 At 4pm → 82°F
+                 At 8pm → 70°F
+                As you plot these points, you see a curve.
+                Without a graph, it’s just numbers.
+                 With a graph, it tells a story.
+                Graphs don’t just show data.
+                 They reveal behavior.
+                Image to place here:
+                 Time (x-axis) vs Temperature (y-axis)
+                 Smooth rising then falling line curve.
+                """
+            ]
+        ),
+        
+        8: Lesson(
+            title: "Functions in Math (Input → Output)",
+            content: [
+                """
+                Why Math Needs Functions
+                Sometimes numbers follow a rule.
+                Instead of listing every answer,
+                 we can describe the pattern with one system.
+                Functions let us turn input into output using a consistent rule.
+                That’s powerful.
+                Image to place here:
+                 A simple diagram:
+                 Input → Rule → Output
+                 Minimal, clean layout.
+                """,
+                
+                """
+                What a Function Is
+                A function is a rule that takes an input
+                 and produces exactly one output.
+                You give it something.
+                 It applies a rule.
+                 It gives you a result.
+                Same input → same output. Always.
+                Image to place here:
+                 Box labeled “f(x)”
+                 Arrow from 3 → f(x) → 7
+                 Subtle text: “Rule inside the box”
+                """,
+                
+                """
+                Seeing the Rule
+                Imagine this rule:
+                Multiply any number by 2.
+                If you input 3 → output is 6
+                 If you input 5 → output is 10
+                 If you input 10 → output is 20
+                The rule never changes.
+                 Only the input does.
+                Image to place here:
+                 Small table:
+                 Input | Output
+                 3 | 6
+                 5 | 10
+                 10 | 20
+                """,
+                
+                """
+                Functions on a Graph
+                Functions can also be drawn.
+                The input goes on the x-axis.
+                 The output goes on the y-axis.
+                If the rule is “multiply by 2,”
+                 the graph forms a straight line.
+                The line represents the relationship.
+                Image to place here:
+                 A straight line rising from left to right
+                 Labeled: y = 2x
+                """,
+                
+                """
+                Why Consistency Matters
+                A function must give one output for each input.
+                If you input 4,
+                 you can’t sometimes get 8 and sometimes get 12.
+                That wouldn’t be a function.
+                Functions are predictable systems.
+                That predictability is what makes them useful.
+                Image to place here:
+                 Two visuals side by side:
+                 Left: Input 4 → 8 (consistent)
+                 Right: Input 4 → 8 and 12 (crossed out)
+                """,
+
+                """
+                Real-World Example
+                Think about a taxi fare.
+                Base fee: $3
+                 Plus $2 per mile.
+                That’s a function.
+                If you travel 1 mile → $5
+                 If you travel 5 miles → $13
+                 If you travel 10 miles → $23
+                Distance is the input.
+                 Cost is the output.
+                The rule connects them.
+                Image to place here:
+                 Diagram:
+                 Miles → Fare Calculation → Total Cost
+                 With example values shown.
+                """,
+
+                """
+                Why This Matters for Machine Learning
+                A machine learning model is just a complex function.
+                Input data → Model → Prediction.
+                The only difference is that the rule inside the box
+                 is learned from data instead of written by hand.
+                If you understand functions,
+                 you understand the structure behind intelligent systems.
+                Image to place here:
+                 Clean comparison:
+                 Input → Function → Output
+                 Below it:
+                 Input → Model → Prediction
+                """,
+            ]
+        ),
+        
+        9: Lesson(
+            title: "Measuring Error",
+            content: [
+                """
+                Why Error Matters
+                Making predictions is easy.
+                Making accurate predictions is harder.
+                If a model predicts something,
+                 we need a way to measure how wrong it was.
+                Without measuring error,
+                 we have no idea if we’re improving.
+                Image to place here:
+                 Two boxes:
+                 Prediction: 85
+                 Actual: 92
+                 Arrow pointing to a box labeled “Error”
+                """,
+                
+                """
+                What Error Is
+                Error is the difference between what was predicted
+                 and what actually happened.
+                If a model predicts 85
+                 but the real value is 92,
+                The error is 7.
+                Error tells us how far off we are.
+                Image to place here:
+                 92 − 85 = 7
+                 Label: “Error = 7”
+                """,
+                
+                """
+                Bigger Error vs Smaller Error
+                If a prediction is close to the real value,
+                 the error is small.
+                If it’s far away,
+                 the error is large.
+                Smaller error means better prediction.
+                Large error means adjustment is needed.
+                Image to place here:
+                 Two comparisons:
+                 Prediction 90 → Actual 92 → Error 2 (green)
+                 Prediction 60 → Actual 92 → Error 32 (red)
+                """,
+                
+                """
+                Why We Don’t Just Look at One Prediction
+                Models don’t predict once.
+                They predict many times.
+                So we measure the average error across all predictions.
+                That gives us a clear picture of overall performance.
+                One mistake doesn’t define the system.
+                The pattern of mistakes does.
+                Image to place here:
+                 Multiple predictions with small error lines
+                 Arrow pointing to “Average Error”
+                """,
+                
+                """
+                Real-World Example
+                Imagine predicting house prices.
+                Actual price: $300,000
+                 Predicted price: $280,000
+                Error: $20,000
+                Now imagine predicting 100 houses.
+                Some errors are small.
+                 Some are bigger.
+                To improve, the system looks at those errors
+                 and adjusts its internal rule.
+                Error is feedback.
+                Without feedback, nothing improves.
+                Image to place here:
+                 Row of houses with small red lines showing difference
+                 Arrow pointing to “Adjust Model”
+                """,
+                
+                """
+                Why This Matters for Machine Learning
+                Machine learning works like this:
+                
+                1. Make a prediction
+
+
+                2. Measure error
+
+
+                3. Adjust
+
+
+                4. Repeat
+
+
+                That loop continues thousands of times.
+                Error is not failure.
+                Error is information.
+                It tells the system how to get better.
+                Image to place here:
+                 Circular loop diagram:
+                 Predict → Compare → Error → Adjust → Repeat
+                """,
+            ]
+        ),
+        
+        10: Lesson(
+            title: "Modeling With a Line (Intuition Only)",
+            content: [
+                """
+                Why We Model Data
+                When we look at scattered data points, we want to understand the pattern behind them.
+                Instead of memorizing every single point,
+                 we try to describe the overall trend.
+                That description is called a model.
+                A simple way to model data is with a line.
+                Image to place here:
+                 Scatter plot with random dots and a faint straight line passing through them.
+                """,
+                
+                """
+                What “Fitting a Line” Means
+                Imagine plotting hours studied on the x-axis
+                 and test scores on the y-axis.
+                The points might not form a perfect line.
+                But we can draw a line that best represents the general direction.
+                This is called fitting a line to the data.
+                The line doesn’t hit every point exactly.
+                 It captures the overall pattern.
+                Image to place here:
+                 Scatter plot with an upward slanted line labeled “Best Fit Line”.
+                """,
+                
+                """
+                Why the Line Isn’t Perfect
+                Real-world data is messy.
+                Some students might study 5 hours and score 95.
+                 Another might study 5 hours and score 80.
+                The line won’t pass through every point.
+                Instead, it balances the errors.
+                It tries to stay as close as possible to all the points overall.
+                Image to place here:
+                 Dots above and below a straight line
+                 Small vertical lines showing distance from each dot to the line.
+                """,
+                
+                """
+                What the Line Represents
+                The line is a rule.
+                For any number of study hours,
+                 it gives a predicted score.
+                Input → Output.
+                That’s the same structure as a function.
+                The difference is that this rule is chosen because it best matches the data.
+                Image to place here:
+                 Diagram:
+                 Hours Studied → Line Rule → Predicted Score
+                """,
+                
+                """
+                Real-World Example
+                Imagine tracking temperature over time.
+                The data points might go up and down slightly.
+                But overall, the trend may be rising.
+                A line drawn through those points
+                 gives a simple summary of the direction.
+                Instead of focusing on small daily changes,
+                 we focus on the bigger pattern.
+                Image to place here:
+                 Time vs Temperature scatter plot
+                 Straight trend line showing overall increase.
+                """,
+                
+                """
+                Why This Matters for Machine Learning
+                Machine learning models try to find patterns in data.
+                Fitting a line is the simplest version of that idea.
+                
+                We:
+                
+                1. Look at data
+
+
+                2. Find a rule that best matches it
+
+
+                3. Use that rule to make predictions
+
+
+                This is the foundation of regression.
+                From here, lines become curves.
+                 Curves become complex models.
+                But the core idea stays the same:
+                Find a pattern.
+                 Use it to predict.
+                Image to place here:
+                 Flow diagram:
+                 Data Points → Find Best Pattern → Prediction
+
+                """,
+            ]
+        )
     ]
 }
