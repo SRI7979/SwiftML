@@ -823,6 +823,7 @@ struct LessonProvider {
                  A messy vertical list of many numbers on the left → arrow → one clean box labeled “Average: 86”
                 """,
                 
+                "IMG:1T6",
                 
                 """
                 What an Average Is
@@ -839,6 +840,8 @@ struct LessonProvider {
                  Label: “Average”
                 """,
                 
+                "IMG:2T6",
+                
                 """
                 Why Dividing Matters
                 If you only add numbers, bigger groups always look larger.
@@ -853,6 +856,8 @@ struct LessonProvider {
                  Group B: 40 numbers → Same total but much lower average
                  Clean comparison layout.
                 """,
+                
+                "IMG:3T6",
                 
                 """
                 What Averages Actually Tell Us
@@ -870,6 +875,8 @@ struct LessonProvider {
                  A horizontal line labeled “Average = 86”
                 """,
                 
+                "IMG:4T6",
+                
                 """
                 Real-World Example
                 Imagine a fitness tracker app.
@@ -886,6 +893,8 @@ struct LessonProvider {
                  Arrow pointing to a box labeled “Average Steps Per Day”
                 """,
                 
+                "IMG:5T6",
+                
                 """
                 Why This Matters for Machine Learning
                 Machine learning models constantly summarize data.
@@ -901,7 +910,9 @@ struct LessonProvider {
                 Image to place here:
                  Flow diagram:
                  Data → Calculate Average → Performance Insight
-                """
+                """,
+                
+                "IMG:6T6"
             ]
         ),
         
@@ -918,6 +929,8 @@ struct LessonProvider {
                  A vertical list of numbers on the left → arrow → simple line graph on the right.
                 """,
                 
+                "IMG:1T7",
+
                 """
                 Understanding the Axes
                 A graph has two directions.
@@ -932,6 +945,8 @@ struct LessonProvider {
                  Side: “Test Score (y)”
                 """,
                 
+                "IMG:2T7",
+
                 """
                 Plotting Points
                 Each data pair becomes a point.
@@ -945,6 +960,8 @@ struct LessonProvider {
                  Minimalistic style.
                 """,
                 
+                "IMG:3T7",
+
                 """
                 Seeing Trends
                 When many points move in a direction, that’s a trend.
@@ -960,6 +977,8 @@ struct LessonProvider {
                  Right: downward trend (negative)
                 """,
                 
+                "IMG:4T7",
+
                 """
                 Why Relationships Matter
                 Machine learning is about finding relationships.
@@ -973,6 +992,8 @@ struct LessonProvider {
                  Input Data → Graph → Pattern → Prediction
                 """,
                 
+                "IMG:5T7",
+
                 """
                 Real-World Example
                 Imagine tracking temperature throughout the day.
@@ -988,7 +1009,10 @@ struct LessonProvider {
                 Image to place here:
                  Time (x-axis) vs Temperature (y-axis)
                  Smooth rising then falling line curve.
-                """
+                """,
+                
+                "IMG:6T7"
+
             ]
         ),
         
@@ -1008,6 +1032,8 @@ struct LessonProvider {
                  Minimal, clean layout.
                 """,
                 
+                "IMG:1T8",
+
                 """
                 What a Function Is
                 A function is a rule that takes an input
@@ -1021,6 +1047,8 @@ struct LessonProvider {
                  Arrow from 3 → f(x) → 7
                  Subtle text: “Rule inside the box”
                 """,
+                
+                "IMG:2T8",
                 
                 """
                 Seeing the Rule
@@ -1039,6 +1067,8 @@ struct LessonProvider {
                  10 | 20
                 """,
                 
+                "IMG:3T8",
+                
                 """
                 Functions on a Graph
                 Functions can also be drawn.
@@ -1051,6 +1081,8 @@ struct LessonProvider {
                  A straight line rising from left to right
                  Labeled: y = 2x
                 """,
+                
+                "IMG:4T8",
                 
                 """
                 Why Consistency Matters
@@ -1065,7 +1097,9 @@ struct LessonProvider {
                  Left: Input 4 → 8 (consistent)
                  Right: Input 4 → 8 and 12 (crossed out)
                 """,
-
+                
+                "IMG:5T8",
+                
                 """
                 Real-World Example
                 Think about a taxi fare.
@@ -1083,7 +1117,9 @@ struct LessonProvider {
                  Miles → Fare Calculation → Total Cost
                  With example values shown.
                 """,
-
+                
+                "IMG:6T8",
+                
                 """
                 Why This Matters for Machine Learning
                 A machine learning model is just a complex function.
@@ -1098,6 +1134,8 @@ struct LessonProvider {
                  Below it:
                  Input → Model → Prediction
                 """,
+                
+                "IMG:7T8"
             ]
         ),
         
@@ -1119,6 +1157,8 @@ struct LessonProvider {
                  Arrow pointing to a box labeled “Error”
                 """,
                 
+                "IMG:1T9",
+                
                 """
                 What Error Is
                 Error is the difference between what was predicted
@@ -1131,6 +1171,8 @@ struct LessonProvider {
                  92 − 85 = 7
                  Label: “Error = 7”
                 """,
+                
+                "IMG:2T9",
                 
                 """
                 Bigger Error vs Smaller Error
@@ -1146,6 +1188,8 @@ struct LessonProvider {
                  Prediction 60 → Actual 92 → Error 32 (red)
                 """,
                 
+                "IMG:3T9",
+                
                 """
                 Why We Don’t Just Look at One Prediction
                 Models don’t predict once.
@@ -1158,6 +1202,8 @@ struct LessonProvider {
                  Multiple predictions with small error lines
                  Arrow pointing to “Average Error”
                 """,
+                
+                "IMG:4T9",
                 
                 """
                 Real-World Example
@@ -1176,6 +1222,8 @@ struct LessonProvider {
                  Row of houses with small red lines showing difference
                  Arrow pointing to “Adjust Model”
                 """,
+                
+                "IMG:5T9",
                 
                 """
                 Why This Matters for Machine Learning
@@ -1201,6 +1249,9 @@ struct LessonProvider {
                  Circular loop diagram:
                  Predict → Compare → Error → Adjust → Repeat
                 """,
+                
+                "IMG:6T9",
+                
             ]
         ),
         
@@ -1218,6 +1269,8 @@ struct LessonProvider {
                  Scatter plot with random dots and a faint straight line passing through them.
                 """,
                 
+                "IMG:1T10",
+                
                 """
                 What “Fitting a Line” Means
                 Imagine plotting hours studied on the x-axis
@@ -1231,6 +1284,8 @@ struct LessonProvider {
                  Scatter plot with an upward slanted line labeled “Best Fit Line”.
                 """,
                 
+                "IMG:2T10",
+
                 """
                 Why the Line Isn’t Perfect
                 Real-world data is messy.
@@ -1244,6 +1299,8 @@ struct LessonProvider {
                  Small vertical lines showing distance from each dot to the line.
                 """,
                 
+                "IMG:3T10",
+                
                 """
                 What the Line Represents
                 The line is a rule.
@@ -1256,6 +1313,8 @@ struct LessonProvider {
                  Diagram:
                  Hours Studied → Line Rule → Predicted Score
                 """,
+                
+                "IMG:4T10",
                 
                 """
                 Real-World Example
@@ -1271,6 +1330,8 @@ struct LessonProvider {
                  Straight trend line showing overall increase.
                 """,
                 
+                "IMG:5T10",
+
                 """
                 Why This Matters for Machine Learning
                 Machine learning models try to find patterns in data.
@@ -1296,8 +1357,9 @@ struct LessonProvider {
                 Image to place here:
                  Flow diagram:
                  Data Points → Find Best Pattern → Prediction
-
                 """,
+                
+                "IMG:6T10",
             ]
         )
     ]
