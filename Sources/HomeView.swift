@@ -316,7 +316,7 @@ struct HomeView: View {
                             selectedNode = selectedNode == 5 ? nil : 5
                         }) {
                             VStack(spacing: 8) {
-                                Image(systemName: completedNodes.contains(5) ? "checkmark.seal.fill" : "function")
+                                Image(systemName: completedNodes.contains(5) ? "checkmark.seal.fill" : "swift")
                                     .foregroundStyle(completedNodes.contains(5) ? Color.green.gradient : Color.red.gradient)
                                     .font(.system(size: 28, weight: .light))
                                     .foregroundStyle(.black.gradient)
@@ -377,8 +377,8 @@ struct HomeView: View {
                             selectedNode = selectedNode == 6 ? nil : 6
                         }) {
                             VStack(spacing: 8) {
-                                Image(systemName: completedNodes.contains(6) ? "checkmark.seal.fill" : "terminal")
-                                    .foregroundStyle(completedNodes.contains(6) ? Color.green.gradient : Color.black.gradient)
+                                Image(systemName: completedNodes.contains(6) ? "checkmark.seal.fill" : "chart.bar.xaxis")
+                                    .foregroundStyle(completedNodes.contains(6) ? Color.green.gradient : Color.blue.gradient)
                                     .font(.system(size: 28, weight: .light))
                                     .foregroundStyle(.black.gradient)
                                 if(completedNodes.contains(6)){
@@ -397,7 +397,7 @@ struct HomeView: View {
                         .position(x: 330, y: 1020)
                         
                         if selectedNode == 6 {
-                            Text("Decision Trees")
+                            Text("Data")
                                 .foregroundColor(.white)
                                 .font(.subheadline)
                                 .position(x: 330, y: 1090)
@@ -430,8 +430,8 @@ struct HomeView: View {
                             selectedNode = selectedNode == 7 ? nil : 7
                         }) {
                             VStack(spacing: 8) {
-                                Image(systemName: completedNodes.contains(7) ? "checkmark.seal.fill" : "terminal")
-                                    .foregroundStyle(completedNodes.contains(7) ? Color.green.gradient : Color.black.gradient)
+                                Image(systemName: completedNodes.contains(7) ? "checkmark.seal.fill" : "chart.line.uptrend.xyaxis")
+                                    .foregroundStyle(completedNodes.contains(7) ? Color.green.gradient : Color.red.gradient)
                                     .font(.system(size: 28, weight: .light))
                                     .foregroundStyle(.black.gradient)
                                 if(completedNodes.contains(7)){
@@ -450,7 +450,7 @@ struct HomeView: View {
                         .position(x: 200, y: 1150)
                         
                         if selectedNode == 7 {
-                            Text("Neural Networks")
+                            Text("Graphs & Relationships")
                                 .foregroundColor(.white)
                                 .font(.subheadline)
                                 .position(x: 200, y: 1220)
@@ -483,8 +483,8 @@ struct HomeView: View {
                             selectedNode = selectedNode == 8 ? nil : 8
                         }) {
                             VStack(spacing: 8) {
-                                Image(systemName: completedNodes.contains(8) ? "checkmark.seal.fill" : "terminal")
-                                    .foregroundStyle(completedNodes.contains(8) ? Color.green.gradient : Color.black.gradient)
+                                Image(systemName: completedNodes.contains(8) ? "checkmark.seal.fill" : "function")
+                                    .foregroundStyle(completedNodes.contains(8) ? Color.green.gradient : Color.purple.gradient)
                                     .font(.system(size: 28, weight: .light))
                                     .foregroundStyle(.black.gradient)
                                 if(completedNodes.contains(8)){
@@ -503,7 +503,7 @@ struct HomeView: View {
                         .position(x: 70, y: 1300)
                         
                         if selectedNode == 8 {
-                            Text("Decision Trees")
+                            Text("Functions in Math")
                                 .foregroundColor(.white)
                                 .font(.subheadline)
                                 .position(x: 70, y: 1370)
@@ -536,8 +536,8 @@ struct HomeView: View {
                             selectedNode = selectedNode == 9 ? nil : 9
                         }) {
                             VStack(spacing: 8) {
-                                Image(systemName: completedNodes.contains(9) ? "checkmark.seal.fill" : "terminal")
-                                    .foregroundStyle(completedNodes.contains(9) ? Color.green.gradient : Color.black.gradient)
+                                Image(systemName: completedNodes.contains(9) ? "checkmark.seal.fill" : "exclamationmark.triangle.fill")
+                                    .foregroundStyle(completedNodes.contains(9) ? Color.green.gradient : Color.yellow.gradient)
                                     .font(.system(size: 28, weight: .light))
                                     .foregroundStyle(.black.gradient)
                                 if(completedNodes.contains(9)){
@@ -556,7 +556,7 @@ struct HomeView: View {
                         .position(x: 200, y: 1430)
                         
                         if selectedNode == 9 {
-                            Text("Neural Networks")
+                            Text("Measuring Error")
                                 .foregroundColor(.white)
                                 .font(.subheadline)
                                 .position(x: 200, y: 1500)
@@ -580,8 +580,8 @@ struct HomeView: View {
                             selectedNode = selectedNode == 10 ? nil : 10
                         }) {
                             VStack(spacing: 8) {
-                                Image(systemName: completedNodes.contains(10) ? "checkmark.seal.fill" : "terminal")
-                                    .foregroundStyle(completedNodes.contains(10) ? Color.green.gradient : Color.black.gradient)
+                                Image(systemName: completedNodes.contains(10) ? "checkmark.seal.fill" : "graph.2d")
+                                    .foregroundStyle(completedNodes.contains(10) ? Color.green.gradient : Color.blue.gradient)
                                     .font(.system(size: 28, weight: .light))
                                     .foregroundStyle(.black.gradient)
                                 if(completedNodes.contains(10)){
@@ -600,7 +600,7 @@ struct HomeView: View {
                         .position(x: 330, y: 1560)
                         
                         if selectedNode == 10 {
-                            Text("Neural Networks")
+                            Text("Modeling with lines")
                                 .foregroundColor(.white)
                                 .font(.subheadline)
                                 .position(x: 330, y: 1630)
@@ -642,8 +642,8 @@ struct HomeView: View {
                             selectedNode = selectedNode == 11 ? nil : 11
                         }) {
                             VStack(spacing: 8) {
-                                Image(systemName: completedNodes.contains(11) ? "checkmark.seal.fill" : "terminal")
-                                    .foregroundStyle(completedNodes.contains(11) ? Color.green.gradient : Color.black.gradient)
+                                Image(systemName: completedNodes.contains(11) ? "checkmark.seal.fill" : "network")
+                                    .foregroundStyle(completedNodes.contains(11) ? Color.green.gradient : Color.blue.gradient)
                                     .font(.system(size: 28, weight: .light))
                                     .foregroundStyle(.black.gradient)
                                 if(completedNodes.contains(11)){
@@ -662,7 +662,7 @@ struct HomeView: View {
                         .position(x: 330, y: 1970)
                         
                         if selectedNode == 11 {
-                            Text("Decision Trees")
+                            Text("What Is a Model?")
                                 .foregroundColor(.white)
                                 .font(.subheadline)
                                 .position(x: 330, y: 2040)
@@ -695,8 +695,8 @@ struct HomeView: View {
                             selectedNode = selectedNode == 12 ? nil : 12
                         }) {
                             VStack(spacing: 8) {
-                                Image(systemName: completedNodes.contains(12) ? "checkmark.seal.fill" : "terminal")
-                                    .foregroundStyle(completedNodes.contains(12) ? Color.green.gradient : Color.black.gradient)
+                                Image(systemName: completedNodes.contains(12) ? "checkmark.seal.fill" : "flask")
+                                    .foregroundStyle(completedNodes.contains(12) ? Color.green.gradient : Color.green.gradient)
                                     .font(.system(size: 28, weight: .light))
                                     .foregroundStyle(.black.gradient)
                                 if(completedNodes.contains(12)){
@@ -715,7 +715,7 @@ struct HomeView: View {
                         .position(x: 200, y: 2090)
                         
                         if selectedNode == 12 {
-                            Text("Neural Networks")
+                            Text("Training vs Testing")
                                 .foregroundColor(.white)
                                 .font(.subheadline)
                                 .position(x: 200, y: 2160)
@@ -748,7 +748,7 @@ struct HomeView: View {
                             selectedNode = selectedNode == 13 ? nil : 13
                         }) {
                             VStack(spacing: 8) {
-                                Image(systemName: completedNodes.contains(13) ? "checkmark.seal.fill" : "terminal")
+                                Image(systemName: completedNodes.contains(13) ? "checkmark.seal.fill" : "scalemass")
                                     .foregroundStyle(completedNodes.contains(13) ? Color.green.gradient : Color.black.gradient)
                                     .font(.system(size: 28, weight: .light))
                                     .foregroundStyle(.black.gradient)
@@ -768,7 +768,7 @@ struct HomeView: View {
                         .position(x: 70, y: 2220)
                         
                         if selectedNode == 13 {
-                            Text("Decision Trees")
+                            Text("Overfitting vs Generalization")
                                 .foregroundColor(.white)
                                 .font(.subheadline)
                                 .position(x: 70, y: 2290)
@@ -801,8 +801,8 @@ struct HomeView: View {
                             selectedNode = selectedNode == 14 ? nil : 14
                         }) {
                             VStack(spacing: 8) {
-                                Image(systemName: completedNodes.contains(14) ? "checkmark.seal.fill" : "terminal")
-                                    .foregroundStyle(completedNodes.contains(14) ? Color.green.gradient : Color.black.gradient)
+                                Image(systemName: completedNodes.contains(14) ? "checkmark.seal.fill" : "tag.fill")
+                                    .foregroundStyle(completedNodes.contains(14) ? Color.green.gradient : Color.purple.gradient)
                                     .font(.system(size: 28, weight: .light))
                                     .foregroundStyle(.black.gradient)
                                 if(completedNodes.contains(14)){
@@ -821,7 +821,7 @@ struct HomeView: View {
                         .position(x: 200, y: 2360)
                         
                         if selectedNode == 14 {
-                            Text("Neural Networks")
+                            Text("Supervised Learning")
                                 .foregroundColor(.white)
                                 .font(.subheadline)
                                 .position(x: 200, y: 2430)
@@ -845,8 +845,8 @@ struct HomeView: View {
                             selectedNode = selectedNode == 15 ? nil : 15
                         }) {
                             VStack(spacing: 8) {
-                                Image(systemName: completedNodes.contains(15) ? "checkmark.seal.fill" : "terminal")
-                                    .foregroundStyle(completedNodes.contains(15) ? Color.green.gradient : Color.black.gradient)
+                                Image(systemName: completedNodes.contains(15) ? "checkmark.seal.fill" : "brain")
+                                    .foregroundStyle(completedNodes.contains(15) ? Color.green.gradient : Color.pink.gradient)
                                     .font(.system(size: 28, weight: .light))
                                     .foregroundStyle(.black.gradient)
                                 if(completedNodes.contains(15)){

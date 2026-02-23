@@ -145,6 +145,8 @@ struct LessonProvider {
                 It’s like asking the computer to speak.
                 """,
                 
+                "--------------------------------------------------",
+
                 """
                 4️⃣ Printing your age!!!
                 
@@ -825,6 +827,8 @@ struct LessonProvider {
                 
                 "IMG:1T6",
                 
+                "--------------------------------------------------",
+
                 """
                 What an Average Is
                 An average (also called the mean) is a way to describe what’s typical.
@@ -842,6 +846,8 @@ struct LessonProvider {
                 
                 "IMG:2T6",
                 
+                "--------------------------------------------------",
+
                 """
                 Why Dividing Matters
                 If you only add numbers, bigger groups always look larger.
@@ -859,6 +865,8 @@ struct LessonProvider {
                 
                 "IMG:3T6",
                 
+                "--------------------------------------------------",
+
                 """
                 What Averages Actually Tell Us
                 An average doesn’t tell you everything.
@@ -877,6 +885,8 @@ struct LessonProvider {
                 
                 "IMG:4T6",
                 
+                "--------------------------------------------------",
+
                 """
                 Real-World Example
                 Imagine a fitness tracker app.
@@ -895,6 +905,8 @@ struct LessonProvider {
                 
                 "IMG:5T6",
                 
+                "--------------------------------------------------",
+
                 """
                 Why This Matters for Machine Learning
                 Machine learning models constantly summarize data.
@@ -931,6 +943,8 @@ struct LessonProvider {
                 
                 "IMG:1T7",
 
+                "--------------------------------------------------",
+
                 """
                 Understanding the Axes
                 A graph has two directions.
@@ -947,6 +961,8 @@ struct LessonProvider {
                 
                 "IMG:2T7",
 
+                "--------------------------------------------------",
+
                 """
                 Plotting Points
                 Each data pair becomes a point.
@@ -961,6 +977,8 @@ struct LessonProvider {
                 """,
                 
                 "IMG:3T7",
+
+                "--------------------------------------------------",
 
                 """
                 Seeing Trends
@@ -979,6 +997,8 @@ struct LessonProvider {
                 
                 "IMG:4T7",
 
+                "--------------------------------------------------",
+
                 """
                 Why Relationships Matter
                 Machine learning is about finding relationships.
@@ -993,6 +1013,8 @@ struct LessonProvider {
                 """,
                 
                 "IMG:5T7",
+
+                "--------------------------------------------------",
 
                 """
                 Real-World Example
@@ -1034,6 +1056,8 @@ struct LessonProvider {
                 
                 "IMG:1T8",
 
+                "--------------------------------------------------",
+
                 """
                 What a Function Is
                 A function is a rule that takes an input
@@ -1050,6 +1074,8 @@ struct LessonProvider {
                 
                 "IMG:2T8",
                 
+                "--------------------------------------------------",
+
                 """
                 Seeing the Rule
                 Imagine this rule:
@@ -1069,6 +1095,8 @@ struct LessonProvider {
                 
                 "IMG:3T8",
                 
+                "--------------------------------------------------",
+
                 """
                 Functions on a Graph
                 Functions can also be drawn.
@@ -1084,6 +1112,8 @@ struct LessonProvider {
                 
                 "IMG:4T8",
                 
+                "--------------------------------------------------",
+
                 """
                 Why Consistency Matters
                 A function must give one output for each input.
@@ -1100,6 +1130,8 @@ struct LessonProvider {
                 
                 "IMG:5T8",
                 
+                "--------------------------------------------------",
+
                 """
                 Real-World Example
                 Think about a taxi fare.
@@ -1120,6 +1152,8 @@ struct LessonProvider {
                 
                 "IMG:6T8",
                 
+                "--------------------------------------------------",
+
                 """
                 Why This Matters for Machine Learning
                 A machine learning model is just a complex function.
@@ -1159,6 +1193,8 @@ struct LessonProvider {
                 
                 "IMG:1T9",
                 
+                "--------------------------------------------------",
+
                 """
                 What Error Is
                 Error is the difference between what was predicted
@@ -1174,6 +1210,8 @@ struct LessonProvider {
                 
                 "IMG:2T9",
                 
+                "--------------------------------------------------",
+
                 """
                 Bigger Error vs Smaller Error
                 If a prediction is close to the real value,
@@ -1190,6 +1228,8 @@ struct LessonProvider {
                 
                 "IMG:3T9",
                 
+                "--------------------------------------------------",
+
                 """
                 Why We Don’t Just Look at One Prediction
                 Models don’t predict once.
@@ -1205,6 +1245,8 @@ struct LessonProvider {
                 
                 "IMG:4T9",
                 
+                "--------------------------------------------------",
+
                 """
                 Real-World Example
                 Imagine predicting house prices.
@@ -1225,6 +1267,8 @@ struct LessonProvider {
                 
                 "IMG:5T9",
                 
+                "--------------------------------------------------",
+
                 """
                 Why This Matters for Machine Learning
                 Machine learning works like this:
@@ -1271,6 +1315,8 @@ struct LessonProvider {
                 
                 "IMG:1T10",
                 
+                "--------------------------------------------------",
+
                 """
                 What “Fitting a Line” Means
                 Imagine plotting hours studied on the x-axis
@@ -1285,6 +1331,8 @@ struct LessonProvider {
                 """,
                 
                 "IMG:2T10",
+
+                "--------------------------------------------------",
 
                 """
                 Why the Line Isn’t Perfect
@@ -1301,6 +1349,8 @@ struct LessonProvider {
                 
                 "IMG:3T10",
                 
+                "--------------------------------------------------",
+
                 """
                 What the Line Represents
                 The line is a rule.
@@ -1316,6 +1366,8 @@ struct LessonProvider {
                 
                 "IMG:4T10",
                 
+                "--------------------------------------------------",
+
                 """
                 Real-World Example
                 Imagine tracking temperature over time.
@@ -1331,6 +1383,8 @@ struct LessonProvider {
                 """,
                 
                 "IMG:5T10",
+
+                "--------------------------------------------------",
 
                 """
                 Why This Matters for Machine Learning
@@ -1360,7 +1414,7 @@ struct LessonProvider {
                 """,
                 
                 "IMG:6T10",
-            ],
+            ]
         ),
         11: Lesson(
             title: "What is a model?",
@@ -1383,6 +1437,8 @@ struct LessonProvider {
                 
                 "IMG:1T11",
                 
+                "--------------------------------------------------",
+
                 """
                 What a Model Is
                 A model is a system that takes input
@@ -1400,6 +1456,8 @@ struct LessonProvider {
 
                 "IMG:2T11",
                 
+                "--------------------------------------------------",
+
                 """
                 The Guess → Error → Adjust Cycle
                 Models don’t start smart.
@@ -1416,6 +1474,8 @@ struct LessonProvider {
                 
                 "IMG:3T11",
 
+                "--------------------------------------------------",
+
                 """
                 Why Repetition Matters
                 One guess doesn’t teach much.
@@ -1431,6 +1491,8 @@ struct LessonProvider {
                 """,
                 
                 "IMG:4T11",
+
+                "--------------------------------------------------",
 
                 """
                 Real-World Example
@@ -1456,6 +1518,8 @@ struct LessonProvider {
                 """,
 
                 "IMG:5T11",
+
+                "--------------------------------------------------",
 
                 """
                 Why This Matters
@@ -1497,6 +1561,8 @@ struct LessonProvider {
                 
                 "IMG:1T12",
 
+                "--------------------------------------------------",
+
                 """
                 What Training Data Is
                 Training data is what the model learns from.
@@ -1511,6 +1577,8 @@ struct LessonProvider {
                 """,
                 
                 "IMG:2T12",
+                
+                "--------------------------------------------------",
 
                 """
                 What Testing Data Is
@@ -1529,6 +1597,8 @@ struct LessonProvider {
                 
                 "IMG:3T12",
 
+                "--------------------------------------------------",
+
                 """
                 Why Separation Matters
                 If we train and test on the same data,
@@ -1546,6 +1616,8 @@ struct LessonProvider {
                 """,
                 
                 "IMG:4T12",
+
+                "--------------------------------------------------",
 
                 """
                 Real-World Example
@@ -1567,6 +1639,8 @@ struct LessonProvider {
                 """,
                 
                 "IMG:5T12",
+
+                "--------------------------------------------------",
 
                 """
                 Why This Matters
@@ -1604,6 +1678,8 @@ struct LessonProvider {
                 
                 "IMG:1T13",
 
+                "--------------------------------------------------",
+
                 """
                 What Overfitting Is
                 
@@ -1622,6 +1698,8 @@ struct LessonProvider {
                 
                 "IMG:2T13",
 
+                "--------------------------------------------------",
+
                 """
                 What Generalization Is
                 Generalization is what we actually want.
@@ -1638,6 +1716,8 @@ struct LessonProvider {
                 
                 "IMG:3T13",
 
+                "--------------------------------------------------",
+
                 """
                 Why Simpler Can Be Better
                 A more complex model isn’t always smarter.
@@ -1652,6 +1732,8 @@ struct LessonProvider {
                 """,
                 
                 "IMG:4T13",
+
+                "--------------------------------------------------",
 
                 """
                 Real-World Example
@@ -1672,6 +1754,8 @@ struct LessonProvider {
                 """,
                 
                 "IMG:5T13",
+
+                "--------------------------------------------------",
 
                 """
                 Why This Matters
@@ -1707,6 +1791,8 @@ struct LessonProvider {
                 
                 "IMG:1T14",
 
+                "--------------------------------------------------",
+
                 """
                 What Supervised Learning Is
                 Supervised learning means the model is trained using labeled data.
@@ -1722,6 +1808,8 @@ struct LessonProvider {
                 """,
                 
                 "IMG:2T14",
+
+                "--------------------------------------------------",
 
                 """
                 Two Main Types: Classification
@@ -1740,6 +1828,8 @@ struct LessonProvider {
                 
                 "IMG:3T14",
 
+                "--------------------------------------------------",
+
                 """
                 Two Main Types: Regression
                 Regression means predicting a number.
@@ -1757,6 +1847,8 @@ struct LessonProvider {
                 
                 "IMG:4T14",
 
+                "--------------------------------------------------",
+
                 """
                 Why Labels Matter
                 Without labels,
@@ -1771,6 +1863,8 @@ struct LessonProvider {
                 """,
                 
                 "IMG:5T14",
+
+                "--------------------------------------------------",
 
                 """
                 Real-World Example
@@ -1794,6 +1888,8 @@ struct LessonProvider {
                 """,
                 
                 "IMG:6T14",
+
+                "--------------------------------------------------",
 
                 """
                 Why This Matters
@@ -1837,6 +1933,8 @@ struct LessonProvider {
                 
                 "IMG:1T15",
                 
+                "--------------------------------------------------",
+
                 """
                 What a Neural Network Is
                 A neural network is a model made of layers.
@@ -1852,6 +1950,8 @@ struct LessonProvider {
                 """,
                 
                 "IMG:2T15",
+
+                "--------------------------------------------------",
 
                 """
                 Thinking in Layers
@@ -1870,6 +1970,8 @@ struct LessonProvider {
                 
                 "IMG:3T15",
 
+                "--------------------------------------------------",
+
                 """
                 Weights: What the Network Learns
                 Inside a neural network are numbers called weights.
@@ -1886,6 +1988,8 @@ struct LessonProvider {
                 """,
                 
                 "IMG:4T15",
+
+                "--------------------------------------------------",
 
                 """
                 Neural Networks Still Follow the Same Loop
@@ -1904,6 +2008,8 @@ struct LessonProvider {
                 """,
                 
                 "IMG:5T15",
+
+                "--------------------------------------------------",
 
                 """
                 Real-World Example
@@ -1924,6 +2030,8 @@ struct LessonProvider {
                 """,
                 
                 "IMG:6T15",
+
+                "--------------------------------------------------",
 
                 """
                 Why This Matters
