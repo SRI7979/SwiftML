@@ -1360,6 +1360,593 @@ struct LessonProvider {
                 """,
                 
                 "IMG:6T10",
+            ],
+        ),
+        11: Lesson(
+            title: "What is a model?",
+            content: [
+                """
+                Why We Need Models
+                So far, we’ve talked about data.
+                But data by itself doesn’t do anything.
+                If we want predictions,
+                we need a system that can learn patterns.
+                If study hours increase → scores often increase.
+                If house size increases → price often increases.
+                If temperature drops → energy use may rise.
+                To turn patterns into predictions,
+                we need a model.
+                Image to place here:
+                Simple flow diagram:
+                Data → Model → Prediction
+                """,
+                
+                "IMG:1T11",
+                
+                """
+                What a Model Is
+                A model is a system that takes input
+                and produces a prediction.
+                It looks at patterns in past data
+                and uses them to guess future outcomes.
+                It doesn’t memorize everything.
+                It tries to learn the relationship.
+                Think of it as a rule that wasn’t written by hand —
+                it was learned from examples.
+                Image to place here:
+                Box labeled “Model”
+                Arrow: Input Data → Model → Predicted Output
+                """,
+
+                "IMG:2T11",
+                
+                """
+                The Guess → Error → Adjust Cycle
+                Models don’t start smart.
+                At first, they guess.
+                Then they compare their guess to the real answer.
+                The difference is called error.
+                Using that error, the model adjusts slightly.
+                Then it guesses again.
+                This repeats many times.
+                Image to place here:
+                Circular loop diagram labeled:
+                Guess → Compare → Error → Adjust → Repeat
+                """,
+                
+                "IMG:3T11",
+
+                """
+                Why Repetition Matters
+                One guess doesn’t teach much.
+                But thousands of guesses do.
+                Each small adjustment improves the rule inside the model.
+                Over time, the predictions get closer to reality.
+                Learning is just repeated correction.
+                Image to place here:
+                Error shrinking over time graph
+                X-axis: Training Steps
+                Y-axis: Error
+                Line decreasing gradually
+                """,
+                
+                "IMG:4T11",
+
+                """
+                Real-World Example
+                Imagine predicting house prices.
+                The model sees:
+                Size → 1500 sq ft
+                Actual price → $300,000
+                It guesses: $260,000.
+                Error: $40,000.
+                That error tells the model it’s too low.
+                So it adjusts its internal rule.
+                Next time, maybe it guesses $285,000.
+                Still some error — but smaller.
+                Repeat this across hundreds of houses.
+                Eventually, the predictions become much closer.
+                The model didn’t “understand” houses.
+                It improved through feedback.
+                Image to place here:
+                Row of houses
+                Prediction below each
+                Small red lines showing difference
+                Arrow pointing to “Adjust Rule”
+                """,
+
+                "IMG:5T11",
+
+                """
+                Why This Matters
+                Machine learning is not magic.
+                It’s pattern learning through feedback.
+                Input → Model → Prediction
+                Prediction → Error → Adjustment
+                That loop is the engine behind intelligent systems.
+                Every advanced AI system
+                is built on this simple cycle.
+                Image to place here:
+                Clean combined flow:
+                Data → Model → Prediction
+                Prediction → Error → Update → Model
+                """,
+                
+                "IMG:6T11",
+            ]
+        ),
+        
+        12: Lesson(
+            title: "Training vs Testing",
+            content: [
+                """
+                Why We Can’t Just Trust a Model
+                A model can look smart.
+                It can predict very well on the data it has already seen.
+                But that doesn’t mean it truly understands the pattern.
+                If it only performs well on familiar data,
+                that’s not intelligence.
+                To know if a model is actually useful,
+                we have to test it on something new.
+                Image to place here:
+                Split screen diagram:
+                Left side labeled “Seen Data”
+                Right side labeled “New Data”
+                Model in the middle
+                """,
+                
+                "IMG:1T12",
+
+                """
+                What Training Data Is
+                Training data is what the model learns from.
+                It sees the inputs.
+                It sees the correct answers.
+                It adjusts its internal rule based on errors.
+                This is where the guess → error → adjust cycle happens.
+                The model improves by practicing on this data.
+                Image to place here:
+                Data → Model → Error → Adjust loop
+                Label the data side “Training Data”
+                """,
+                
+                "IMG:2T12",
+
+                """
+                What Testing Data Is
+                Testing data is different.
+                The model has never seen it before.
+                We don’t let it adjust.
+                We just check how well it performs.
+                This shows us whether it actually learned a pattern
+                or just memorized examples.
+                Testing answers one question:
+                Can this model handle new situations?
+                Image to place here:
+                Model → New Data → Prediction
+                Below it: Compare with Actual → Measure Accuracy
+                """,
+                
+                "IMG:3T12",
+
+                """
+                Why Separation Matters
+                If we train and test on the same data,
+                the results will look unrealistically good.
+                It’s like studying the exact answers
+                and then taking the same test.
+                Of course you’ll score high.
+                But real intelligence means handling unfamiliar problems.
+                That’s why we separate training and testing.
+                Image to place here:
+                Student analogy graphic:
+                Left: “Study Sheet”
+                Right: “New Exam”
+                Arrow showing difference
+                """,
+                
+                "IMG:4T12",
+
+                """
+                Real-World Example
+                Imagine predicting house prices again.
+                You train the model on 1,000 houses.
+                It learns patterns between size and price.
+                Now you give it 100 completely new houses.
+                If predictions are still accurate,
+                the model understands the relationship.
+                If predictions fail badly,
+                it didn’t truly learn.
+                Training builds the rule.
+                Testing proves the rule works.
+                Image to place here:
+                Two groups of houses:
+                Group 1 labeled “Training”
+                Group 2 labeled “Testing”
+                Arrow from model to both
+                """,
+                
+                "IMG:5T12",
+
+                """
+                Why This Matters
+                Machine learning isn’t about memorizing data.
+                It’s about learning patterns that generalize.
+                Training = learning.
+                Testing = proving.
+                If a model performs well on new data,
+                it’s ready for the real world.
+                Every serious ML system follows this structure:
+                Training Data → Learn Pattern
+                Testing Data → Evaluate Performance
+                """,
+                
+                "IMG:6T12",
+            ]
+        ),
+        
+        13: Lesson(
+            title: "Overfitting vs Generalization",
+            content: [
+                """
+                Why Memorizing Isn’t Learning
+                Imagine a student who memorizes every question from one practice test.
+                On that exact test, they score 100%.
+                But if the questions change slightly, they fail.
+                That’s not understanding.
+                That’s memorizing.
+                Models can do the same thing.
+                Image to place here:
+                Two students:
+                Left: “Memorized Answers”
+                Right: “Understands Concepts”
+                """,
+                
+                "IMG:1T13",
+
+                """
+                What Overfitting Is
+                
+                Overfitting happens when a model learns the training data too 
+                perfectly.
+                
+                It doesn’t just learn the pattern.
+                It memorizes small details and noise.
+                On training data → accuracy looks amazing.
+                On new data → performance drops.
+                It fits the past too tightly.
+                Image to place here:
+                Scatter plot with a wiggly line that touches almost every point
+                Label: “Overfit Model”
+                """,
+                
+                "IMG:2T13",
+
+                """
+                What Generalization Is
+                Generalization is what we actually want.
+                Instead of memorizing every point,
+                the model learns the overall trend.
+                It may not hit every training point exactly.
+                But it performs well on new data.
+                It captures the big idea.
+                Image to place here:
+                Same scatter plot
+                Smooth straight or slightly curved line
+                Label: “Generalized Model”
+                """,
+                
+                "IMG:3T13",
+
+                """
+                Why Simpler Can Be Better
+                A more complex model isn’t always smarter.
+                If a line explains the pattern well,
+                a complicated curve may just be chasing noise.
+                The goal isn’t perfection on old data.
+                The goal is strong performance on unseen data.
+                Image to place here:
+                Side-by-side comparison:
+                Left: Simple smooth line
+                Right: Extremely wavy line
+                """,
+                
+                "IMG:4T13",
+
+                """
+                Real-World Example
+                Imagine predicting test scores from study hours.
+                If one student studied 5 hours and scored 95,
+                another studied 5 hours and scored 80.
+                A good model finds the average trend.
+                An overfit model might create sharp bends
+                just to pass through every single point.
+                That makes it unstable.
+                When a new student studies 5 hours,
+                the overfit model may give a weird prediction.
+                The generalized model stays consistent.
+                Image to place here:
+                New data point added to graph
+                Simple line handles it well
+                Wavy line predicts something extreme
+                """,
+                
+                "IMG:5T13",
+
+                """
+                Why This Matters
+                Machine learning isn’t about copying the past.
+                It’s about preparing for the future.
+                Overfitting = memorization.
+                Generalization = understanding.
+                The best models balance accuracy and flexibility.
+                That balance is what makes AI useful in the real world.
+                """,
+                
+                "IMG:6T13",
+
+            ]
+        ),
+        
+        14: Lesson(
+            title: "Supervised Learning",
+            content: [
+                """
+                Why Models Need Guidance
+                Imagine trying to learn math
+                without ever being told if your answers are correct.
+                You’d guess.
+                But you wouldn’t know if you were improving.
+                Models work the same way.
+                To learn effectively,
+                they need examples with correct answers.
+                That’s called supervision.
+                Image to place here:
+                Input + Correct Answer → Model
+                """,
+                
+                "IMG:1T14",
+
+                """
+                What Supervised Learning Is
+                Supervised learning means the model is trained using labeled data.
+                Each input comes with the correct output.
+                The model:
+                Makes a prediction
+                Compares it to the correct answer
+                Adjusts based on the error
+                The labels act like a teacher.
+                Image to place here:
+                Data Point → Label
+                Both feeding into Model
+                """,
+                
+                "IMG:2T14",
+
+                """
+                Two Main Types: Classification
+                Classification means predicting a category.
+                Example:
+                Email → Spam or Not Spam
+                Photo → Cat or Dog
+                Medical scan → Healthy or Not Healthy
+                The output is a label.
+                It chooses a group.
+                Image to place here:
+                Image of an email
+                Arrow to Model
+                Output: “Spam”
+                """,
+                
+                "IMG:3T14",
+
+                """
+                Two Main Types: Regression
+                Regression means predicting a number.
+                Example:
+                House size → Price
+                Study hours → Test score
+                Age → Height
+                The output is a value.
+                It estimates a quantity.
+                Image to place here:
+                House icon
+                Arrow to Model
+                Output: “$320,000”
+                """,
+                
+                "IMG:4T14",
+
+                """
+                Why Labels Matter
+                Without labels,
+                the model wouldn’t know what it’s aiming for.
+                It would guess randomly
+                with no feedback.
+                Labels provide direction.
+                They define what “correct” means.
+                Image to place here:
+                Target with bullseye
+                Model arrow aiming at center
+                """,
+                
+                "IMG:5T14",
+
+                """
+                Real-World Example
+                Imagine building a model to predict test scores.
+                You collect data:
+                Hours studied → Actual score
+                You train the model on many examples.
+                The hours are the input.
+                The real score is the label.
+                The model adjusts until predictions are close.
+                That’s supervised learning.
+                It learns from labeled examples
+                the same way students learn from graded assignments.
+                Image to place here:
+                Table:
+                Hours | Score
+                2 → 70
+                5 → 85
+                8 → 95
+                Arrow into Model
+                """,
+                
+                "IMG:6T14",
+
+                """
+                Why This Matters
+                Most real-world machine learning systems
+                are supervised.
+                They learn from examples
+                that include correct answers.
+                Classification predicts categories.
+                Regression predicts numbers.
+                Different outputs.
+                Same learning structure.
+                Input → Model → Prediction
+                Prediction → Compare to Label → Adjust
+                That’s supervised learning.
+                """,
+                
+                "IMG:7T14",
+
+            ]
+        ),
+        
+        15: Lesson(
+            title: "Neural Networks (Big Picture)",
+            content: [
+                """
+                Why Simple Models Aren’t Always Enough
+                Some patterns are simple.
+                Study more → score higher.
+                Bigger house → higher price.
+                But real-world problems are messier.
+                Faces in photos.
+                Spoken language.
+                Handwritten numbers.
+                A single line or rule isn’t powerful enough.
+                We need models that can learn complex patterns.
+                That’s where neural networks come in.
+                Image to place here:
+                Simple pattern → straight line
+                Complex pattern → tangled curve
+                """,
+                
+                "IMG:1T15",
+                
+                """
+                What a Neural Network Is
+                A neural network is a model made of layers.
+                Each layer takes input,
+                processes it,
+                and passes it forward.
+                Instead of one rule,
+                it uses many small rules stacked together.
+                Together, they form a powerful system.
+                Image to place here:
+                Diagram:
+                Input Layer → Hidden Layers → Output Layer
+                """,
+                
+                "IMG:2T15",
+
+                """
+                Thinking in Layers
+                Each layer learns something different.
+                Early layers learn simple features.
+                Later layers combine them into complex ideas.
+                For example, in image recognition:
+                First layer → edges
+                Next layer → shapes
+                Final layer → object
+                The network builds understanding step by step.
+                Image to place here:
+                Image broken into:
+                Edges → Shapes → Object
+                """,
+                
+                "IMG:3T15",
+
+                """
+                Weights: What the Network Learns
+                Inside a neural network are numbers called weights.
+                Weights control how strong each connection is.
+                During training:
+                If a prediction is wrong → weights adjust
+                If it’s close → small adjustment
+                Learning is just updating weights
+                to reduce error.
+                Image to place here:
+                Connections between nodes
+                Some thick, some thin
+                Label: “Weights”
+                """,
+                
+                "IMG:4T15",
+
+                """
+                Neural Networks Still Follow the Same Loop
+                Even though neural networks look complex,
+                the learning process is the same.
+                They:
+                Make a prediction
+                Measure error
+                Adjust weights
+                Repeat
+                The structure is bigger,
+                but the logic hasn’t changed.
+                Image to place here:
+                Circular loop:
+                Predict → Error → Adjust Weights → Repeat
+                """,
+                
+                "IMG:5T15",
+
+                """
+                Real-World Example
+                Imagine recognizing handwritten numbers.
+                Each image has thousands of pixels.
+                A neural network looks at all of them at once.
+                It learns:
+                Which pixel patterns mean “3”
+                Which patterns mean “8”
+                Over time, it gets better
+                by adjusting its internal weights.
+                It doesn’t memorize images.
+                It learns patterns.
+                Image to place here:
+                Handwritten digits
+                Arrow to Neural Network
+                Output: “3”
+                """,
+                
+                "IMG:6T15",
+
+                """
+                Why This Matters
+                Neural networks power modern AI.
+                Image recognition.
+                Voice assistants.
+                Self-driving cars.
+                Language models.
+                But underneath all that power
+                is the same idea you’ve learned throughout this app:
+                Input → Model → Prediction
+                Prediction → Error → Adjustment
+                Neural networks are not magic.
+                They’re layered functions
+                that learn by feedback.
+                If you understand that,
+                you understand the foundation of modern AI.
+                Image to place here:
+                Simple progression diagram:
+                Function → Model → Neural Network
+                """,
+                
+                "IMG:7T15",
             ]
         )
     ]
