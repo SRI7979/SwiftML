@@ -19,8 +19,8 @@ let package = Package(
             bundleIdentifier: "SwiftAI.SwiftML",
             displayVersion: "1.0",
             bundleVersion: "1",
-            appIcon: .placeholder(icon: .beachball),
-            accentColor: .presetColor(.mint),
+            appIcon: .placeholder(icon: .lightningBolt),
+            accentColor: .presetColor(.green),
             supportedDeviceFamilies: [
                 .pad,
                 .phone

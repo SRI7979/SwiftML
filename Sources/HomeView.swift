@@ -9,12 +9,15 @@
 //                 \  /
 //BUTTON FORMULA:   \/
 // when making new buttons, move the x up/down by 130, and move y by 120, for text make it 70 below the button, and for nested button, make it 90 below button which is 40 below text
+
 import SwiftUI
 struct HomeView: View {
     @State private var selectedNode: Int? = nil
     @State private var showTaskDetail = false
     @State private var activeLesson: Lesson? = nil
     @State private var completedNodes: Set<Int> = []
+    @State private var showQuiz = false
+    @State private var activeQuizID: Int? = nil
     
     let totalContentHeight: CGFloat = 2650
     var body: some View {
@@ -75,7 +78,7 @@ struct HomeView: View {
                                 .frame(width: 95, height: 6)
                                 .foregroundColor(.teal)
                         }
-                        .position(x: 195, y: 850)
+                        .position(x: 195, y: 900)
                         
                         VStack(alignment: .leading, spacing: 4) {
                             Text("ML Basics")
@@ -886,6 +889,33 @@ struct HomeView: View {
                         //ML-----------------------|
                         //SECTION------------------|
                         //COMPLETED----------------|
+                        
+                        
+                        //QUIZZES
+                        
+                        Button(action: {
+                            activeQuizID = 1
+                            showQuiz = true
+                        }) {
+                            VStack(spacing: 8) {
+                                Image(systemName: completedNodes.contains(16) ? "checkmark.seal.fill" : "lightbulb.max")
+                                    .foregroundStyle(completedNodes.contains(16) ? Color.green.gradient : Color.pink.gradient)
+                                    .font(.system(size: 28, weight: .light))
+                                    .foregroundStyle(.black.gradient)
+                                if(completedNodes.contains(16)){
+                                    Text("Finished")
+                                        .font(.caption.bold())
+                                        .foregroundColor(.white)
+                                }
+                                else{
+                                    Text("Quiz 1")
+                                        .font(.caption.bold())
+                                        .foregroundColor(.white)
+                                }
+                            }
+                        }
+                        .buttonStyle(QuizStyle())
+                        .position(x: 140, y: 765)
                     }
                     .frame(width: geo.size.width, height: totalContentHeight)
                 }
@@ -900,6 +930,11 @@ struct HomeView: View {
                     )
                 }
             }
+            
+            .navigationDestination(isPresented: $showQuiz) {
+                QuizView(quiz: QuizProvider.quizzes[activeQuizID ?? 1] ?? QuizProvider.quizzes[1]!)
+            }
+             
         }
     }
 }
@@ -946,3 +981,26 @@ struct FinishedTaskStyle: ButtonStyle {
             .animation(.spring(response: 0.3, dampingFraction: 0.7), value: configuration.isPressed)
     }
 }
+
+struct QuizStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .frame(width: 220, height: 70)
+            .background(.ultraThinMaterial)
+            .clipShape(RoundedRectangle(cornerRadius: 28, style: .continuous))
+            .contentShape(Rectangle())
+            .overlay(
+                RoundedRectangle(cornerRadius: 28, style: .continuous)
+                    .stroke(
+                        LinearGradient(colors: [.white.opacity(0.5), .clear],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing),
+                        lineWidth: 1
+                    )
+            )
+            .shadow(color: .black.opacity(0.3), radius: 12, x: 0, y: 8)
+            .scaleEffect(configuration.isPressed ? 0.88 : 1.0)
+            .animation(.spring(response: 0.3, dampingFraction: 0.7), value: configuration.isPressed)
+    }
+}
+

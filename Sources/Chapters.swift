@@ -4,6 +4,7 @@
 //
 //  Created by Sri Challa on 2/14/26.
 //
+/*
 import SwiftUI
 
 struct Chapter: Identifiable {
@@ -20,3 +21,4 @@ let chapters: [Chapter] = [
     Chapter(title: "The Toolkit", subtitle: "Python Coding", icon: "terminal", color: .blue, taskRange: 7...12),
     Chapter(title: "The Brain", subtitle: "SwiftML", icon: "brain", color: .teal, taskRange: 13...18)
 ]
+*/
