@@ -19,21 +19,23 @@ struct HomeView: View {
     @State private var showQuiz = false
     @State private var activeQuizID: Int? = nil
     
-    let totalContentHeight: CGFloat = 2650
+    private let totalContentHeight: CGFloat = 2650
+    private let designWidth: CGFloat = 400
+
+    private var layoutScale: CGFloat {
+        let screenWidth = UIScreen.main.bounds.width
+        return min(max(screenWidth / designWidth, 0.85), 1.8)
+    }
     var body: some View {
         NavigationStack {
-            GeometryReader { geo in
-                //let rightSide = geo.size.width * 0.85
-                //let middle    = geo.size.width * 0.5
-                //let leftSide  = geo.size.width * 0.15
-                ScrollView{
+            ScrollView {
                     
                     ZStack(alignment: .top) {
                         //Color.black
                         // .ignoresSafeArea()
                         
                         LinearGradient(colors: [.teal, .teal.opacity(0.7), .blue, .blue.opacity(0.3), .purple.opacity(0.5), .purple], startPoint: .top, endPoint: .bottom)
-                            .frame(width: geo.size.width, height: totalContentHeight + 400)
+                                                        .frame(width: designWidth, height: totalContentHeight + 400)
                             .frame(height: totalContentHeight)
                             .ignoresSafeArea()
                             .onTapGesture {
@@ -917,10 +919,12 @@ struct HomeView: View {
                         .buttonStyle(QuizStyle())
                         .position(x: 140, y: 765)
                     }
-                    .frame(width: geo.size.width, height: totalContentHeight)
+                    .frame(width: designWidth, height: totalContentHeight, alignment: .top)
+                    .scaleEffect(layoutScale, anchor: .top)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: totalContentHeight * layoutScale, alignment: .top)
                 }
                 .scrollDisabled(selectedNode != nil)
-            }
             .navigationDestination(isPresented: $showTaskDetail) {
                 if let currentLesson = LessonProvider.data[selectedNode ?? 1] {
                     TaskDetailView(
